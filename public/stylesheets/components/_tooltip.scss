@@ -1,0 +1,66 @@
+.tooltip {
+  position: absolute;
+  top: 50%;
+  right: -170px;
+  transform: translateY(-50%);
+  width: 154px;
+  background-color: #fff;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease-in-out;
+}
+
+.card:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transition: .3s ease-in-out;
+}
+
+  .tooltip__table {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+    .tooltip__table::before {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 20px;
+      left: -12px;
+      border: 6px solid;
+      border-color: transparent #fff transparent transparent;
+      transition: .3s ease-in-out;
+    }
+
+    .tooltip__table th {
+      padding: 2px 8px;
+      font-size: 10px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: #ba3638;
+    }
+
+    .tooltip__table th:first-child {
+      border-right: 1px solid #666;
+      border-top-left-radius: 4px;
+    }
+
+    .tooltip__table th:last-child {
+      border-top-right-radius: 4px;
+    }
+
+    .tooltip__table td {
+      font-size: 24px;
+      font-weight: bold;
+      color: #909090;
+    }
+
+    .tooltip__table td:first-child {
+      border-right: 1px solid #666;
+    }

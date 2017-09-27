@@ -12,42 +12,27 @@ requisição HTTP, nesse teste será necessário conhecimentos em ordenação
 de dados e matemática.
 
 
+### Instruções para rodar o projeto
 
-Primeiramente, faça um fork e clone deste projeto, crie uma branch (pode ser com seu nome mesmo), depois instale as
-dependências:
+**1.** Clone o repositório e acesse o diretório criado:
+
+    git clone git@github.com:HenriqueSilverio/frontend-test.git && cd frontend-test
+
+**2.** Instale as dependências:
 
     npm install
 
-Após isso, rode a aplicação:
+**3.** Rode a aplicação:
 
     npm start
 
-Depois do seu setup você precisará seguir as seguintes instruções, para
-construir a aplicação:
+Pronto! Agora acesse `http://localhost:7007` em seu browser favorito.
 
-1. Desenvolver a página, que tem o seu layout em **a-fazenda.psd**.(A
-   única fonte usada foi a Montserrat, disponível no Google Fonts,
-use-a!)
-2. Criar um script em JavaScript que faça uma requisição para **/fazenda.json**
-  * Apresentar os dados requisitados pelo layout.
-  * Calcular a porcentagem de "positives" e "negatives".
-  * Ordernar os items do json a partir da porcentagem calculada.
-3.  **NÃO** alterar o arquivo **fazenda.json**. Em hipótese nenhuma!
-4. Seguir estritamente o .psd.
-5. Suporte para IE8+.
-6. Não usar geradores como yeoman, procure se manter na estrutura do nosso projeto.
-7. Se for preciso modificar a estrutura e workflow, atualizar o README.
-8. Submeta o Pull Request! :D
+### Ferramentas utilizadas no desenvolvimento
 
-<br>
-**Pontos Extras**:
-
-1. Se possível, escreva o código com BackboneJS, se não, use VanillaJS que nós iremos avaliar do mesmo jeito! ;)
-2. Utilizar algum pré-processador CSS. (SASS FTW!)
-3. Testes, testes, testes!
-4. Automatizar as coisas. (Gulp? Grunt? :D)
-5. Template Engines (underscore, mustache, ou outras de sua preferência)
-
-
-
-<br><br><sub>Os dados presentes neste teste são totalmente fictícios.</sub>
+- [Backbone.js](http://backbonejs.org) ([jQuery](http://jquery.com), [Underscore.js](http://underscorejs.org))
+- [Handlebars](http://handlebarsjs.com)
+- [Sass](http://sass-lang.com)
+- [Babel](http://babeljs.io)
+- [Browserify](http://browserify.org)
+- Automatização com [NPM Scripts](https://docs.npmjs.com/misc/scripts)

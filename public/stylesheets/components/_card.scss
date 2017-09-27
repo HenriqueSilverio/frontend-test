@@ -1,0 +1,120 @@
+.card {
+  position: relative;
+  padding: 10px 15px;
+  background-color: #fff;
+  counter-increment: counter-cards;
+  transition: .3s ease-in-out;
+}
+
+.card:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.card:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #ba3638;
+  transition: .3s ease-in-out;
+}
+
+  .card:before,
+  .card:after {
+    content: " ";
+    display: table;
+  }
+
+  .card:after {
+    clear: both;
+  }
+
+  .card__avatar {
+    float: left;
+    position: relative;
+    width: 74px;
+    height: 74px;
+  }
+
+    .avatar-mask {
+      float: left;
+      position: relative;
+      width: 74px;
+      height: 74px;
+      border: 4px solid #ba3638;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: .3s ease-in-out;
+    }
+
+    .card:hover .avatar-mask {
+      border-color: #fff;
+      transition: .3s ease-in-out;
+    }
+
+    .card__avatar img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 95px;
+    }
+
+    .card__avatar::after {
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      content: counter(counter-cards);
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 20px;
+      color: #707070;
+      border: 1px solid #707070;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+
+  .card__description {
+    float: left;
+    width: 100%;
+    max-width: 238px;
+    padding-left: 20px;
+    text-align: left;
+    position: relative;
+    top: -50%;
+    transform: translateY(50%);
+  }
+
+    .card__title {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 18px;
+      font-weight: normal;
+      color: #ba3638;
+      transition: .3s ease-in-out;
+    }
+
+    .card:hover .card__title {
+      color: #f2f1f1;
+      transition: .3s ease-in-out;
+    }
+
+    .card__subtitle {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: normal;
+      color: #909090;
+      transition: .3s ease-in-out;
+    }
+
+    .card:hover .card__subtitle {
+      color: #330d0e;
+      transition: .3s ease-in-out;
+    }

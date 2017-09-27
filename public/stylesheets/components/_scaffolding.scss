@@ -1,0 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  font-family: Montserrat, sans-serif;
+  background-color: #272727;
+}
+
+.container {
+  width: 100%;
+  max-width: 374px;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+  padding-left: 32px;
+}
